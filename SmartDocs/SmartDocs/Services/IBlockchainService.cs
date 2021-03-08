@@ -7,5 +7,8 @@ namespace SmartDocs.Services
 {
     public interface IBlockchainService
     {
+        Task<string> GetTransaction(string address);
+
+        Task<string> SendTransaction(string message);
     }
 }

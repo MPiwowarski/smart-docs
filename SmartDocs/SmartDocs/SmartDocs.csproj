@@ -17,5 +17,6 @@
 		</PackageReference>
 		<PackageReference Include="Nethereum.Geth" Version="3.8.0" />
 		<PackageReference Include="Nethereum.Web3" Version="3.8.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.0.0" />
 	</ItemGroup>
 </Project>

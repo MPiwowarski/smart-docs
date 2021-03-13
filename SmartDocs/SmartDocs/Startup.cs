@@ -27,12 +27,14 @@ namespace SmartDocs
             services.AddScoped<IBlockchainService, BlockchainService>();
             services.AddScoped<IEncryptService, EncryptService>();
             services.AddScoped<IMainService, MainService>();
-            
+
+            services.AddSwaggerGen();          
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseSwagger();
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -43,6 +45,11 @@ namespace SmartDocs
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "API V1");
+            });
 
             app.UseEndpoints(endpoints =>
             {

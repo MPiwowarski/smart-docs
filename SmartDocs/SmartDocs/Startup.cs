@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using SmartDocs.Services;
 
 namespace SmartDocs
 {
@@ -23,6 +24,10 @@ namespace SmartDocs
 
             var connectionString = Configuration.GetSection("ConnectionStrings:SqlServerConnectionString").Get<string>();
             services.AddDbContext<SmartDocsDbContext>(options => options.UseSqlServer(connectionString));
+            services.AddScoped<IBlockchainService, BlockchainService>();
+            services.AddScoped<IEncryptService, EncryptService>();
+            services.AddScoped<IMainService, MainService>();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

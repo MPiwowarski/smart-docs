@@ -7,5 +7,8 @@ namespace SmartDocs.Services
 {
     public interface IMainService
     {
+        Task<bool> SendHashedTransaction(int userId, string message);
+
+        Task<bool> GetTransactionAsync(string transactionAddress, string message);
     }
 }

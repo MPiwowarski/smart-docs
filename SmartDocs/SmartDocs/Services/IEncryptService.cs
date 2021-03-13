@@ -7,5 +7,6 @@ namespace SmartDocs.Services
 {
     public interface IEncryptService
     {
+        string Encrypt(string message);
     }
 }

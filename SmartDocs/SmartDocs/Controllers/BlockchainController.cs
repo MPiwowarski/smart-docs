@@ -1,13 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SmartDocs.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace SmartDocs.Controllers
 {
-    public class BlockchainController : Controller
+    [ApiController]
+    [Route("[controller]")]
+    public class BlockchainController : ControllerBase
     {
         private readonly IMainService _mainService;
 
@@ -16,11 +15,13 @@ namespace SmartDocs.Controllers
             _mainService = mainService;
         }
 
+        [HttpGet]
         public async Task<IActionResult> GetTransaction(string transactionAddress, string message)
         {
-            return Ok(await _mainService.GetTransactionAsync(transactionAddress,message));
+            return Ok(await _mainService.GetTransactionAsync(transactionAddress, message));
         }
 
+        [HttpPost]
         public async Task<IActionResult> SendTransaction(int userId, string message)
         {
             return Ok(await _mainService.SendHashedTransaction(userId, message));

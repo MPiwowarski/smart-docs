@@ -4,7 +4,8 @@ The project about integration .net core web app with Ethereum blokchain based on
 ***** LOCALHOST SETUP *****
 
 1.Running the .net core web app requires .net core SDK 3.1. It was created in Visual Studio 2019, and not sure if the project is fully compatible with the older VS version.
-2.Database stuff is managed via the EF Core, and to fasten the configuration process the Database creation and the run migrations happen just after running the project.
+2.
+3.Database stuff is managed via the EF Core, and to fasten the configuration process the Database creation and the run migrations happen just after running the project.
 
 
 3.The mocked Ethereum blockchain environment:

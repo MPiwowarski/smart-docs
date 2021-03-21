@@ -23,6 +23,6 @@ c) Bear in mind you need to have jdk installed on your machine. It can be downlo
 
 a) to generate Ethereum smart contract via VS Code need to install Solidity and truffle extensions;
 
-b) to compile the Solidity smart contract just run "truffle compile" in the powershell terminal.
+b) to compile the Solidity smart contract just run "truffle compile" in the powershell terminal. Then you need to copy the generated abi and bytecode to the C# BlockchainService fields.
 
 

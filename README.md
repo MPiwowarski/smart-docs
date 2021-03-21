@@ -4,8 +4,8 @@ The project about integration .net core web app with Ethereum blokchain based on
 ***** LOCALHOST SETUP *****
 
 1.Running the .net core web app requires .net core SDK 3.1. It was created in Visual Studio 2019, and not sure if the project is fully compatible with the older VS version.
-2.
-3.Database stuff is managed via the EF Core, and to fasten the configuration process the Database creation and the run migrations happen just after running the project.
+
+2.Database stuff is managed via the EF Core, and to fasten the configuration process the Database creation and the run migrations happen just after running the project.
 
 
 3.The mocked Ethereum blockchain environment:
@@ -20,7 +20,9 @@ The account key store file password is : password"
 c) Bear in mind you need to have jdk installed on your machine. It can be downloaded from: https://www.oracle.com/java/technologies/javase-jdk16-downloads.html
 
 4.Extra info about smart contracts
+5.
 a) to generate Ethereum smart contract via VS Code need to install Solidity and truffle extensions;
+
 b) to compile the Solidity smart contract just run "truffle compile" in the powershell terminal.
 
 

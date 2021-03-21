@@ -1,5 +1,5 @@
 # smart-docs
-The project about integration .net core web app with Ethereum blokchain based on the Solidity language.
+The project about integration .net core web app with Ethereum blokchain based on the Solidity smart contracts.
 
 ***** LOCALHOST SETUP *****
 1. Running the .net core web app requires .net core SDK 3.1. It was created in Visual Studio 2019, and not sure if the project is fully compatible with the older VS version.

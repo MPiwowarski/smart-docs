@@ -20,7 +20,7 @@ The account key store file password is : password"
 c) Bear in mind you need to have jdk installed on your machine. It can be downloaded from: https://www.oracle.com/java/technologies/javase-jdk16-downloads.html
 
 4.Extra info about smart contracts
-5.
+
 a) to generate Ethereum smart contract via VS Code need to install Solidity and truffle extensions;
 
 b) to compile the Solidity smart contract just run "truffle compile" in the powershell terminal.
